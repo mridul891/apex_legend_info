@@ -1,27 +1,24 @@
-import React from "react";
 import logo from "../assets/logo.png";
 const Navbar = () => {
   return (
-    <div className="mx-[10rem] ">
-      <div className="flex justify-between  item-center ">
-        {/* Left Element */}
-        <div className="h-10 w-10">
-          <img src={logo} />
-        </div>
-        {/* Mid ELement */}
-        <div className="">
-          <ul className="flex justify-between gap-10 text-black">
-            <li>LEGENDS</li>
-            <li>BATTLE PASS</li>
-            <li>NEWS</li>
-          </ul>
-        </div>
-        {/* RIght ELement */}
-        <div>
-          <div className="flex">
-            <div>🔍</div>
-            <div>Free Download</div>
-          </div>
+    <div className="flex justify-between items-center  text-[25px] text-white">
+      {/* Left Element */}
+      <div className="flex-1 flex justify-center items-center ">
+        <img src={logo} className="w-12 h-12" />
+      </div>
+      {/* Mid ELement */}
+      <div className=" flex-1  flex justify-center items-center ">
+        <ul className="flex justify-between gap-10 ">
+          <li>LEGENDS</li>
+          <li>BATTLE PASS</li>
+          <li>NEWS</li>
+        </ul>
+      </div>
+      {/* RIght ELement */}
+      <div className="flex-1  flex  justify-center items-center ">
+        <div className="flex shadow-[4px_2px_10px_0px_#a72f1ae7]">
+          <div className="bg-black px-3">🔍</div>
+          <div className="bg-[#A72F1A] px-7 font-sm ">Free Download</div>
         </div>
       </div>
     </div>
