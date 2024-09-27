@@ -1,13 +1,29 @@
 import Energy from "./Energy";
-
+import p1 from "../assets/1.png";
+import p3 from "../assets/3.png";
 const Info = () => {
   return (
     <div className="flex h-full   ">
-      <div className="w-[calc(100%/3)] h-full flex-1 flex justify-center items-center">
-        Column 1
+      <div className="w-[calc(100%/3)] h-full flex-1 flex items-center">
+        <div className="flex gap-10 flex-col">
+          <div>
+            <h3 className="text-4xl">VALKYRIE</h3>
+            <p className="text-[#A72F1A] font-sm">Winged Avenger</p>
+          </div>
+          <div className="flex">
+            <div className="bg-black">
+              <img src={p3} className="h-[3rem] m-3 p-1" />
+            </div>
+            <div className="px-3 bg-white">
+              <Energy title={"Class"} h3={"Skirmisher"} />
+            </div>
+          </div>
+        </div>
       </div>
       <div className="w-[calc(100%/3)] h-full flex-1 flex justify-center items-center bg-[#A72F1A]">
-        Column 2
+        <div className=" opacity-20 w-full">
+          <img src={p1} className=" mt-20 " />
+        </div>
       </div>
       <div className="w-[calc(100%/3)] h-full flex-1 flex  justify-center items-center">
         <div className="px-5 flex flex-col gap-5 justify-center mt-[5rem]">
