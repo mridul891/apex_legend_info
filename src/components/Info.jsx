@@ -1,9 +1,11 @@
 import Energy from "./Energy";
 import p1 from "../assets/1.png";
+import p2 from "../assets/2.png";
 import p3 from "../assets/3.png";
 const Info = () => {
   return (
     <div className="flex h-full   ">
+      {/* first column */}
       <div className="w-[calc(100%/3)] h-full flex-1 flex items-center">
         <div className="flex gap-10 flex-col">
           <div>
@@ -20,11 +22,19 @@ const Info = () => {
           </div>
         </div>
       </div>
-      <div className="w-[calc(100%/3)] h-full flex-1 flex justify-center items-center bg-[#A72F1A]">
-        <div className=" opacity-20 w-full">
-          <img src={p1} className=" mt-20 " />
+      {/* second column */}
+      <div className="w-[calc(100%/3)] h-full  bg-[#A72F1A] ">
+        <div className="relative ">
+          <div className=" ">
+            <img src={p1} className="mt-[1.5rem] ml-10 scale-[100px] opacity-10 object-cover" />
+          </div>
+          <div className="absolute bottom-[-150px] right-[100px] scale-[2.2] ">
+            <img src={p2} alt="" />
+          </div>
         </div>
       </div>
+
+      {/* THird Columns */}
       <div className="w-[calc(100%/3)] h-full flex-1 flex  justify-center items-center">
         <div className="px-5 flex flex-col gap-5 justify-center mt-[5rem]">
           <p className="text-[14px] font-semibold   font-sans	">

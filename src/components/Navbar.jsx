@@ -1,7 +1,7 @@
 import logo from "../assets/logo.png";
-const Navbar = () => {
+const Navbar = () => {  
   return (
-    <div className="flex justify-between items-center  text-[25px] text-white">
+    <div className="flex justify-center items-center text-[25px] text-white">
       {/* Left Element */}
       <div className="flex-1 flex justify-start pl-10 items-center ">
         <img src={logo} className="w-12 h-12" />
