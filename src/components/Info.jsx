@@ -88,8 +88,10 @@ const Info = () => {
             kunai can be seen along her right hip belt.
           </p>
           <div className="flex flex-col gap-3">
-            <Energy title={"Basic"} h3={"Cloudburst | updraft"} />
-            <Energy title={"Passive"} h3={"Drift "} />
+            <div className="flex gap-10 ">
+              <Energy title={"Basic"} h3={"Cloudburst | updraft"} />
+              <Energy title={"Passive"} h3={"Drift "} />
+            </div>
             <div className="flex  gap-10">
               <Energy title={"Signature"} h3={"Tailwind"} />
               <Energy title={"Ultimate"} h3={"Blade Storm"} />
