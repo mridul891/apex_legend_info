@@ -1,14 +1,25 @@
 import Energy from "./Energy";
 import p1 from "../assets/1.png";
-import p2 from "../assets/2.png";
+import p5 from "../assets/4.png";
 import p3 from "../assets/3.png";
 import { motion } from "framer-motion";
 
 const Info = () => {
   return (
-    <div className="flex h-full   ">
+    <div className="flex h-full ">
       {/* first column */}
-      <div className="w-[calc(100%/3)] h-full flex-1 flex items-center">
+      <motion.div
+        initial={{ x: -500 }} // Starts 300px from the bottom
+        animate={{ x: 0 }}
+        transition={{
+          type: "spring",
+          stiffness: 100,
+          damping: 20,
+          delay: 1.5,
+          duration: 0.5,
+        }}
+        className="w-[calc(100%/3)] h-full flex-1 flex items-center"
+      >
         <div className="flex gap-10 flex-col">
           <div>
             <h3 className="text-4xl">VALKYRIE</h3>
@@ -23,9 +34,9 @@ const Info = () => {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
       {/* second column */}
-      <div className="w-[calc(100%/3)] h-full  bg-[#A72F1A] ">
+      <div className="w-[calc(100%/3)] h-full  bg-[#0492c2] ">
         <div className="relative ">
           <div className=" ">
             <img
@@ -34,24 +45,35 @@ const Info = () => {
             />
           </div>
           <motion.div
-            initial={{ y: 0 , }} // Starts 300px from the bottom
-            animate={{ y: -500, scale: 1.5 }}
+            initial={{ y: 0 }} // Starts 300px from the bottom
+            animate={{ y: -600, x: -40, scale: 1.2 }}
             transition={{
               type: "spring",
               stiffness: 100,
               damping: 20,
-              delay:2,
+              delay: 2,
               duration: 0.5,
             }} // Controls speed and effect
             className="absolute  "
           >
-            <img src={p2} alt="" />
+            <img src={p5} alt="" />
           </motion.div>
         </div>
       </div>
 
       {/* THird Columns */}
-      <div className="w-[calc(100%/3)] h-full flex-1 flex  justify-center items-center">
+      <motion.div
+        initial={{ x: 500 }} // Starts 300px from the bottom
+        animate={{ x: 0 }}
+        transition={{
+          type: "spring",
+          stiffness: 100,
+          damping: 20,
+          delay: 1.5,
+          duration: 0.5,
+        }}
+        className="w-[calc(100%/3)] h-full flex-1 flex  justify-center items-center"
+      >
         <div className="px-5 flex flex-col gap-5 justify-center mt-[5rem]">
           <p className="text-[14px] font-semibold   font-sans	">
             Bold, brash, fiery and fierce, Kairi Imahara isn’t above greasing
@@ -73,7 +95,7 @@ const Info = () => {
             <Energy title={"Ultimate Ability"} h3={"Skyward Dive"} />
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };
