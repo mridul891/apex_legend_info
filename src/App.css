@@ -1,10 +1,10 @@
 @font-face {
   font-family: "DukeFill";
-  src: url("assets/font/Duke_fill.otf") format("truetype"); /* Adjust the path as needed */
+  src: url("public/font/Duke_fill.otf") format("truetype"); /* Adjust the path as needed */
 }
 
 body {
   font-family: "DukeFill", sans-serif;
   font-size: 20px;
-  background-color: #E4DFDB;
+  background-color: #e4dfdb;
 }
