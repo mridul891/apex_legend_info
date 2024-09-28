@@ -22,15 +22,15 @@ const Info = () => {
       >
         <div className="flex gap-10 flex-col">
           <div>
-            <h3 className="text-4xl">VALKYRIE</h3>
-            <p className="text-[#0492c2] font-sm">Winged Avenger</p>
+            <h3 className="text-4xl">JETT</h3>
+            <p className="text-[#0492c2] font-sm">Seoul, South Korea</p>
           </div>
           <div className="flex">
             <div className="bg-black">
               <img src={p3} className="h-[3rem] m-3 p-1" />
             </div>
             <div className="px-3 bg-white">
-              <Energy title={"Class"} h3={"Skirmisher"} />
+              <Energy title={"Class"} h3={"Duelist"} />
             </div>
           </div>
         </div>
@@ -76,23 +76,24 @@ const Info = () => {
       >
         <div className="px-5 flex flex-col gap-5 justify-center mt-[5rem]">
           <p className="text-[14px] font-semibold   font-sans	">
-            Bold, brash, fiery and fierce, Kairi Imahara isn’t above greasing
-            palms and bending the law. When she was a child, she stole a Titan.
-            It belonged to her dad: callsign Viper. She wanted to be just like
-            him when she grew up. But the next day he left on a mission and
-            never returned. In some ways, she still followed in his footsteps:
-            it wasn't a Titan, but her ship offered a decent living. Her
-            personal life, however, was anything but. During the day, she
-            smuggled precious cargo, and at night, went shot for shot with the
-            outlaws and mercs in the bars. But even though she had her ladies,
-            her liquor, and her love of the sky, she was still obsessed with
-            finding the man who’d put her father in harm’s way: his commander,
-            Kuben Blisk.
+            Jett is a fair-skinned, young woman, and one of the shortest of the
+            Protocol agents. She has white hair, which she ties in a bun on the
+            back. Her bangs are rather long and remain stably locked. Her eyes
+            are a shade of blue, and she looks like she wears eyeliner.
+            Jett&apos;s armor has multiple symbols associated with wind such as
+            the swirl on her right shoulder pad. Her blue, sleeveless jacket
+            features a stylized depiction of the Tailwind logo through some
+            clouds. The icons on the backs of her gloves is the same icon on the
+            lip of her hoodie and bottom edge of her crop top. A sash and two
+            kunai can be seen along her right hip belt.
           </p>
           <div className="flex flex-col gap-3">
-            <Energy title={"Tactical Ability"} h3={"Missile Swarm"} />
-            <Energy title={"Passive Ability"} h3={"VTOL Jets"} />
-            <Energy title={"Ultimate Ability"} h3={"Skyward Dive"} />
+            <Energy title={"Basic"} h3={"Cloudburst | updraft"} />
+            <Energy title={"Passive"} h3={"Drift "} />
+            <div className="flex  gap-10">
+              <Energy title={"Signature"} h3={"Tailwind"} />
+              <Energy title={"Ultimate"} h3={"Blade Storm"} />
+            </div>
           </div>
         </div>
       </motion.div>
