@@ -2,6 +2,8 @@ import Energy from "./Energy";
 import p1 from "../assets/1.png";
 import p2 from "../assets/2.png";
 import p3 from "../assets/3.png";
+import { motion } from "framer-motion";
+
 const Info = () => {
   return (
     <div className="flex h-full   ">
@@ -26,11 +28,25 @@ const Info = () => {
       <div className="w-[calc(100%/3)] h-full  bg-[#A72F1A] ">
         <div className="relative ">
           <div className=" ">
-            <img src={p1} className="mt-[1.5rem] ml-10 scale-[100px] opacity-10 object-cover" />
+            <img
+              src={p1}
+              className="mt-[1.5rem] ml-10 scale-[100px] opacity-10 object-cover"
+            />
           </div>
-          <div className="absolute bottom-[-150px] right-[100px] scale-[2.2] ">
+          <motion.div
+            initial={{ y: 0 , }} // Starts 300px from the bottom
+            animate={{ y: -500, scale: 1.5 }}
+            transition={{
+              type: "spring",
+              stiffness: 100,
+              damping: 20,
+              delay:2,
+              duration: 0.5,
+            }} // Controls speed and effect
+            className="absolute  "
+          >
             <img src={p2} alt="" />
-          </div>
+          </motion.div>
         </div>
       </div>
 

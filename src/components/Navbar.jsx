@@ -1,14 +1,14 @@
 import logo from "../assets/logo.png";
 const Navbar = () => {  
   return (
-    <div className="flex justify-center items-center text-[25px] text-white">
+    <div className="flex justify-center items-center text-[25px] text-white px-10">
       {/* Left Element */}
-      <div className="flex-1 flex justify-start pl-10 items-center ">
+      <div className="flex-1 flex justify-start  items-center ">
         <img src={logo} className="w-12 h-12" />
       </div>
       {/* Mid ELement */}
       <div className=" flex-1  flex justify-center items-center ">
-        <ul className="flex justify-between gap-10 ">
+        <ul className="flex justify-around gap-10 ">
           <li>LEGENDS</li>
           <li>BATTLE PASS</li>
           <li>NEWS</li>
