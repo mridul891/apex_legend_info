@@ -1,6 +1,8 @@
 @font-face {
   font-family: "DukeFill";
-  src: url("public/fonts/Duke_fill.otf") format("opentype");
+  src: url("../public/fonts/Duke_Fill.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
 }
 body {
   font-family: "DukeFill", sans-serif;
