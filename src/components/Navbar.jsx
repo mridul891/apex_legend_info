@@ -1,5 +1,5 @@
 import logo from "../assets/logo.png";
-const Navbar = () => {  
+const Navbar = () => {
   return (
     <div className="flex justify-center items-center text-[25px] text-white px-10">
       {/* Left Element */}
@@ -15,10 +15,10 @@ const Navbar = () => {
         </ul>
       </div>
       {/* RIght ELement */}
-      <div className="flex-1  flex  justify-center items-center ">
-        <div className="flex shadow-[4px_2px_10px_0px_#a72f1ae7]">
-          <div className="bg-black px-3">🔍</div>
-          <div className="bg-[#A72F1A] px-7 font-sm ">Free Download</div>
+      <div className="flex-1  flex  justify-center items-center rounded">
+        <div className="flex shadow-[4px_2px_10px_0px_#0492c2] rounded-lg">
+          <span className="bg-black px-3 ">🔍</span>
+          <span className="bg-[#0492c2] px-7 font-sm ">Free Download</span>
         </div>
       </div>
     </div>

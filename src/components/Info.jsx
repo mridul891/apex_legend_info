@@ -23,7 +23,7 @@ const Info = () => {
         <div className="flex gap-10 flex-col">
           <div>
             <h3 className="text-4xl">VALKYRIE</h3>
-            <p className="text-[#A72F1A] font-sm">Winged Avenger</p>
+            <p className="text-[#0492c2] font-sm">Winged Avenger</p>
           </div>
           <div className="flex">
             <div className="bg-black">
