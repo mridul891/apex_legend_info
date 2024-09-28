@@ -1,5 +1,5 @@
 import Energy from "./Energy";
-import p1 from "../assets/1.png";
+import p1 from "../assets/5.png";
 import p5 from "../assets/4.png";
 import p3 from "../assets/3.png";
 import { motion } from "framer-motion";
@@ -46,7 +46,7 @@ const Info = () => {
           </div>
           <motion.div
             initial={{ y: 0 }} // Starts 300px from the bottom
-            animate={{ y: -600, x: -40, scale: 1.2 }}
+            animate={{ y: -500, x: -40, scale: 1.2 }}
             transition={{
               type: "spring",
               stiffness: 100,
