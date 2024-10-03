@@ -18,7 +18,7 @@ const Info = () => {
           delay: 1.5,
           duration: 0.5,
         }}
-        className="w-[calc(100%/3)] h-full flex-1 flex items-center"
+        className="w-[calc(100%/3)] h-full flex-1 flex items-center scrollbarWidth-none"
       >
         <div className="flex gap-10 flex-col">
           <div>
@@ -37,16 +37,16 @@ const Info = () => {
       </motion.div>
       {/* second column */}
       <div className="w-[calc(100%/3)] h-full  bg-[#0492c2] ">
-        <div className="relative ">
-          <div className=" ">
+        <div className="relative h-full">
+          <div className=" h-full">
             <img
               src={p1}
-              className="mt-[1.5rem] ml-10 scale-[100px] opacity-10 object-cover"
+              className="mt-[1.5rem] ml-10 scale-[100px] opacity-10 object-cover h-full "
             />
           </div>
           <motion.div
-            initial={{ y: 0 }} // Starts 300px from the bottom
-            animate={{ y: -500, x: -40, scale: 1.2 }}
+            initial={{ y:"100vh" }} // Starts 300px from the bottom
+            animate={{ y: "-80vh", x: -40, scale: 1.2 }}
             transition={{
               type: "spring",
               stiffness: 100,
@@ -63,7 +63,7 @@ const Info = () => {
 
       {/* THird Columns */}
       <motion.div
-        initial={{ x: 500 }} // Starts 300px from the bottom
+        initial={{ x: "50vw" }} // Starts 300px from the bottom
         animate={{ x: 0 }}
         transition={{
           type: "spring",
